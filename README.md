@@ -7,6 +7,9 @@ This project was developed for the IoT course at my university, and involves a b
 
 <image src="table.png" width="600px"/>
 
+### Block schematic
+<image src="block.png" width="600px"/>
+
 ## Functionality
 The ESP8266 simply reads the output of the DHT11 and BMP280 sensors, with the help of the appropiate Arduino libraries.
 <br>For the earthquake system, the 555 timer has an astable configuration, outputting square waves for as long as the pendulum makes contact with the ring around it. The ESP8266 takes these waves as input and counts them. The 555’s output pulse period is 100ms, meaning each rising edge will measure 0.1s worth of shaking.
@@ -18,6 +21,9 @@ The ESP8266 simply reads the output of the DHT11 and BMP280 sensors, with the he
 - KY-002:	Shock sensor for earthquake detection (for the proof-of-concept model, an equivalent pendulum sensor was used).
 - 555 timer (and resistors & capacitors used for biasing in the astable configuration)
 - Plusivo ESP8266: The centerpiece handling sensor data collection and uploading it via WiFi.
+
+### Electrical schematic
+<image src="schematic.png" width="600px"/>
 
 ## Notes on equipment
 Although the project was intended to use a KY-002 shock sensor for earthquake detection, the one which I ordered was malfunctioning, so I had to improvise a pendulum that would supplant it.
