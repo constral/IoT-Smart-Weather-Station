@@ -1,9 +1,11 @@
 # IoT Smart Weather Station
 
-
+<image src="breadboard.png" width="600px"/>
 
 ## Overview
 This project was developed for the IoT course at my university, and involves a breadboard weather station which uses several sensors to monitor the parameters of the ambient environment, such as temperature, humidity, pressure, and earthquake duration (using a 555 timer). The measured signals are handled by an ESP8266 development board, which is connected over WiFi to a Google Sheets document that receives the values recorded by the sensors. These are then neatly plotted in a spreadsheet table, and are able to be viewed as graphs for better visualization.
+
+<image src="table.png" width="600px"/>
 
 ## Functionality
 The ESP8266 simply reads the output of the DHT11 and BMP280 sensors, with the help of the appropiate Arduino libraries.
