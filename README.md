@@ -1,14 +1,14 @@
 # IoT Smart Weather Station
 
-<image src="breadboard.png" width="600px"/>
+<image src="breadboard.png" width="800px"/>
 
 ## Overview
 This project was developed for the IoT course at my university, and involves a breadboard weather station which uses several sensors to monitor the parameters of the ambient environment, such as temperature, humidity, pressure, and earthquake duration (using a 555 timer). The measured signals are handled by an ESP8266 development board, which is connected over WiFi to a Google Sheets document that receives the values recorded by the sensors. These are then neatly plotted in a spreadsheet table, and are able to be viewed as graphs for better visualization.
 
-<image src="table.png" width="600px"/>
+<image src="table.png" width="800px"/>
 
 ### Block schematic
-<image src="block.png" width="600px"/>
+<image src="block.png" width="400px"/>
 
 ## Functionality
 The ESP8266 simply reads the output of the DHT11 and BMP280 sensors, with the help of the appropiate Arduino libraries.
@@ -23,7 +23,7 @@ The ESP8266 simply reads the output of the DHT11 and BMP280 sensors, with the he
 - Plusivo ESP8266: The centerpiece handling sensor data collection and uploading it via WiFi.
 
 ### Electrical schematic
-<image src="schematic.png" width="600px"/>
+<image src="schematic.png" width="1000px"/>
 
 ## Notes on equipment
 Although the project was intended to use a KY-002 shock sensor for earthquake detection, the one which I ordered was malfunctioning, so I had to improvise a pendulum that would supplant it.
